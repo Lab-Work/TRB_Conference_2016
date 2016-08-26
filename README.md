@@ -1,5 +1,4 @@
-## Source Code for the Paper 
-## *Fuel Consumption in Oscillatory Traffic: Experimental Results*
+## Source Code for the Paper *Fuel Consumption in Oscillatory Traffic: Experimental Results*
 #### Prepared for TRB Conference 2016
 #### Written by Fangyu Wu and Raphael Stern
 
