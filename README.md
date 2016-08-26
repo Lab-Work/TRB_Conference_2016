@@ -6,6 +6,7 @@ The source runs in Python and has the following dependencies:
 + Numpy
 + Matplotlib
 + OpenCV
++ Scikit-Learn
 
 Please install the required libraries before using the scripts. To run the code, please do:
 
