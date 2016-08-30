@@ -7,12 +7,12 @@ The source runs in Python and has the following dependencies:
 + OpenCV
 + Scikit-Learn
 
-Please install the required libraries before using the scripts. To run the code, please do:
+The algorithm, along with other utilities functions, are packaged into a class DynamicsExtractor. The smoothing and differentiation code runs in Matlab. 
 
-`python extract_dynamics.py (number of vehicles) (source) (destination)`
+To run the code, please do:
 
-For example, to process test A video and save the output to the current directory, one may:
+`(Python) python DynamicsExtractor.py` (only run STEP 1)  
+`(Matlab) DynamicsExtractor`  
+`(Python) python Dynamics Extractor.py` (only run STEP 3)  
 
-`python extract_dynamics.py 10 ../test_A/edited_video.mp4 ./`
-
-If you spot bugs in the script or encountered any issues, please kindly contact the author Fangyu Wu (fwu10@illinois.edu). We will address the problems as soon as possible. 
+If you spot bugs in the script or encountered any issues, please kindly contact the author Fangyu Wu (fwu10@illinois.edu). We will address the problems as soon as possible.
