@@ -276,12 +276,6 @@ class DynamicsExtractor:
         cv2.destroyAllWindows()
         print "Done."
 
-    # Quantitatively validate the estimated displacements by comparing
-    # against the human labels.
-    # (Need to be implemented.)
-    def validate_displacements(self, label):
-        pass
-
     # Visualize one component of the final displacements, velocities and 
     # accelerations. Default to horizontal component. 
     def visualize(self, horizontal=True, save=False):
@@ -344,23 +338,22 @@ if __name__=="__main__":
               [8, 7, 6, 5, 4, 3, 2, 1, 10, 9],  # Test C
               [6, 5, 4, 3, 2, 1, 9, 8, 7]]      # Test D
     for test_X, order_X in zip(tests, orders):
-        if test_X == "test_A/":
-            extractor = DynamicsExtractor(test_X, order_X)
-            '''////////////////////////////////////////////////////////////////
-            STEP 1: Extracting Unsmoothed Displacements
-            ////////////////////////////////////////////////////////////////'''
-            #extractor.find_centers()
-            #extractor.find_displacements()
-            '''////////////////////////////////////////////////////////////////
-            STEP 2: Smoothing and Differentiation
-            Not implemented in Python. Execute the DynamicsExtractor.m 
-            script instead.
-            ////////////////////////////////////////////////////////////////'''
-            #extractor.find_velocities()
-            #extractor.find_accelerations()
-            '''////////////////////////////////////////////////////////////////
-            STEP 3: Visualization
-            Executable after STEP 2.
-            ////////////////////////////////////////////////////////////////'''
-            extractor.visualize(save=True)
-            extractor.inspect_displacements()
+        extractor = DynamicsExtractor(test_X, order_X)
+        '''////////////////////////////////////////////////////////////////
+        STEP 1: Extracting Unsmoothed Displacements
+        ////////////////////////////////////////////////////////////////'''
+        #extractor.find_centers()
+        #extractor.find_displacements()
+        '''////////////////////////////////////////////////////////////////
+        STEP 2: Smoothing and Differentiation
+        Not implemented in Python. Execute the DynamicsExtractor.m 
+        script instead.
+        ////////////////////////////////////////////////////////////////'''
+        #extractor.find_velocities()
+        #extractor.find_accelerations()
+        '''////////////////////////////////////////////////////////////////
+        STEP 3: Visualization
+        Executable after STEP 2.
+        ////////////////////////////////////////////////////////////////'''
+        extractor.visualize(save=True)
+        extractor.inspect_displacements()
