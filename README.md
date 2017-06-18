@@ -1,5 +1,5 @@
 ## Source Code for the Paper *Fuel Consumption in Oscillatory Traffic: Experimental Results*
-#### By Fangyu Wu and Raphael Stern for TRB Conference 2016
+#### By Fangyu Wu and Raphael Stern for TRB Conference 2017
 
 The source runs in Python and has the following dependencies:
 + Numpy
